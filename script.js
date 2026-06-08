@@ -1,13 +1,17 @@
-window.addEventListener("scroll", () => {
-    const cards = document.querySelectorAll(".card");
+window.addEventListener("scroll", revelar);
 
-    cards.forEach(card => {
-        const position = card.getBoundingClientRect().top;
-        const screen = window.innerHeight;
+function revelar(){
+let reveals = document.querySelectorAll(".reveal");
 
-        if(position < screen - 100){
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
-        }
-    });
-});
+for(let i=0;i<reveals.length;i++){
+
+let altura = window.innerHeight;
+let top = reveals[i].getBoundingClientRect().top;
+
+if(top < altura - 100){
+reveals[i].classList.add("active");
+}
+}
+}
+
+revelar();
