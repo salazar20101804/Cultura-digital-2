@@ -5,61 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cultura Digital 2</title>
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<div class="particles"></div>
+
 <header>
     <nav>
-        <h1>Cultura Digital 2</h1>
+        <h1>💻 Cultura Digital 2</h1>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#temas">Temas</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
-<section id="inicio" class="hero">
-    <div class="hero-content">
-        <h2>Bienvenido a Cultura Digital 2</h2>
-        <p>Explora el mundo de la tecnología, innovación y creatividad digital.</p>
-        <a href="#sobre" class="btn">Explorar</a>
+<section class="hero" id="inicio">
+    <div class="contenido">
+        <h2 class="typing">Bienvenido a Cultura Digital 2</h2>
+        <p>Explora el mundo de la tecnología y la innovación.</p>
+        <button>Comenzar</button>
     </div>
 </section>
 
-<section id="sobre" class="info">
-    <h2>¿Qué es Cultura Digital?</h2>
-    <p>
-        La cultura digital integra conocimientos tecnológicos,
-        herramientas digitales y nuevas formas de comunicación.
-    </p>
-</section>
-
-<section class="cards">
-    <div class="card">
-        <h3>Innovación</h3>
-        <p>Descubre nuevas tecnologías.</p>
+<section id="temas" class="cards">
+    <div class="card reveal">
+        <h3>🌐 Internet</h3>
+        <p>Conoce cómo funciona la red mundial.</p>
     </div>
 
-    <div class="card">
-        <h3>Aprendizaje</h3>
-        <p>Desarrolla habilidades digitales.</p>
+    <div class="card reveal">
+        <h3>🤖 Inteligencia Artificial</h3>
+        <p>Descubre el futuro de la tecnología.</p>
     </div>
 
-    <div class="card">
-        <h3>Creatividad</h3>
-        <p>Crea proyectos sorprendentes.</p>
+    <div class="card reveal">
+        <h3>🔒 Ciberseguridad</h3>
+        <p>Protege tu información digital.</p>
     </div>
 </section>
 
-<section id="contacto" class="contacto">
+<section id="contacto" class="contacto reveal">
     <h2>Contacto</h2>
-    <form>
-        <input type="text" placeholder="Nombre">
-        <input type="email" placeholder="Correo">
-        <textarea placeholder="Mensaje"></textarea>
-        <button type="submit">Enviar</button>
-    </form>
+    <input type="text" placeholder="Nombre">
+    <input type="email" placeholder="Correo">
+    <textarea placeholder="Mensaje"></textarea>
+    <button>Enviar</button>
 </section>
 
 <footer>
